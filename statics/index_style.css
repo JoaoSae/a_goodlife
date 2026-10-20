@@ -34,3 +34,33 @@
     }
 }
 }
+.next{
+    margin: 2%;
+    display: flex;
+    justify-content: center;
+    gap: 10%;
+}
+.box1{
+    /* border: 2px  solid rgb(189, 188, 188); */
+    margin-top: 5%;
+    border-radius: 5%;
+    box-shadow: 10px 5px #cccccc;
+    width:fit-content;
+    text-align: center;
+    .ig{
+        width: 20vw;
+        height: 30vh;
+        /* margin: 2%; */
+        /* border: 2px solid black; */
+        background-image: url(../statics/img.webp);
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 5%;
+    }
+    a{
+        color: blue;
+    }
+}
+.box1:hover{
+    box-shadow: 5px 10px 5px 10px #cccccc;
+}
