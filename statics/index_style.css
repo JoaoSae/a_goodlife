@@ -1,0 +1,36 @@
+.poster img{
+    height: 70vh;
+    width: 100%;
+}
+.info{
+    margin: 2%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+    gap: 10%;
+    img{
+        width: 30%;
+        height: 20%;
+    }
+    .text{
+        width: 40%;
+    }
+}
+.group{
+    margin: 2%;
+    display: flex;
+    justify-content: space-around;
+    .info1{
+        text-align: center;
+    img{
+        width: 60%;
+        height: 30%;
+    }
+    .txt{
+        padding: 5%;
+        text-align: justify;
+
+    }
+}
+}
