@@ -1,7 +1,9 @@
+/* Global reset - Removes default spacing from page elements. */
 *{
     margin: 0;
     padding: 0;
 }
+/* Primary navigation - Aligns site links across the page header. */
 nav{
     background-color: #333333;
     display: flex;
@@ -9,10 +11,12 @@ nav{
     align-items: center;
     padding: 1%;
 }
+/* Links - Sets the shared text color and removes underlines. */
 a{
     color: white;
     text-decoration: none;
 }
+/* Link hover - Reserved for optional hover styling. */
 a:hover{
     /* background-color: #b7afaf; */
 }
@@ -23,9 +27,11 @@ a:hover{
         background-color: none;
     }
 } */
+/* Logo image - Controls the width of logo images. */
 .logo img{
     width: 15vw;
 }
+/* Site footer - Styles the shared footer and its link/copyright areas. */
 footer{
     position: relative;
     bottom: 0;

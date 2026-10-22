@@ -1,7 +1,9 @@
+/* Poster - Makes the hero image span the viewport width. */
 .poster img{
     height: 70vh;
     width: 100%;
 }
+/* Information sections - Aligns image and text content in two columns. */
 .info{
     margin: 2%;
     display: flex;
@@ -17,6 +19,7 @@
         width: 40%;
     }
 }
+/* Group section - Arranges grouped information items and their text. */
 .group{
     margin: 2%;
     display: flex;
@@ -34,12 +37,14 @@
     }
 }
 }
+/* Next-page area - Places the featured page cards side by side. */
 .next{
     margin: 2%;
     display: flex;
     justify-content: center;
     gap: 10%;
 }
+/* Preview card - Styles the story and trailer navigation cards. */
 .box1{
     /* border: 2px  solid rgb(189, 188, 188); */
     margin-top: 5%;
@@ -61,6 +66,7 @@
         color: blue;
     }
 }
+/* Preview card hover - Adds emphasis when a visitor points to a card. */
 .box1:hover{
     box-shadow: 5px 10px 5px 10px #cccccc;
 }
