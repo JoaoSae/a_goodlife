@@ -1,43 +1,26 @@
-/* Global reset - Removes default spacing from page elements. */
-*{
-    margin: 0;
-    padding: 0;
-}
-/* Primary navigation - Aligns site links across the page header. */
+/* Flexbox keeps the shared navigation links evenly distributed. */
 nav{
-    background-color: #333333;
+    background-color: var(--color-primary);
     display: flex;
     justify-content: space-around;
     align-items: center;
     padding: 1%;
 }
-/* Links - Sets the shared text color and removes underlines. */
 a{
-    color: white;
+    color: var(--color-link);
     text-decoration: none;
 }
-/* Link hover - Reserved for optional hover styling. */
-a:hover{
-    /* background-color: #b7afaf; */
-}
-/* .logo{
-    font-style: italic;
-    font-weight: bold;
-    a:hover{
-        background-color: none;
-    }
-} */
-/* Logo image - Controls the width of logo images. */
+/* Scale the logo with the viewport instead of fixing it to a pixel width. */
 .logo img{
     width: 15vw;
 }
-/* Site footer - Styles the shared footer and its link/copyright areas. */
+/* Keep footer navigation and the copyright aligned as separate areas. */
 footer{
     position: relative;
     bottom: 0;
     width: 100%;
-    background-color: #333333;
-    color: white;
+    background-color: var(--color-primary);
+    color: var(--color-link);
     .links{
         text-align: right;
     }

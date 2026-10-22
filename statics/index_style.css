@@ -1,9 +1,9 @@
-/* Poster - Makes the hero image span the viewport width. */
+/* The hero image stays edge-to-edge, with its height tied to the viewport. */
 .poster img{
     height: 70vh;
     width: 100%;
 }
-/* Information sections - Aligns image and text content in two columns. */
+/* Pair images with copy in a centered two-column layout. */
 .info{
     margin: 2%;
     display: flex;
@@ -19,7 +19,7 @@
         width: 40%;
     }
 }
-/* Group section - Arranges grouped information items and their text. */
+/* Distribute grouped content evenly and keep each item's copy readable. */
 .group{
     margin: 2%;
     display: flex;
@@ -37,36 +37,34 @@
     }
 }
 }
-/* Next-page area - Places the featured page cards side by side. */
+/* Keep the story and trailer previews together as a horizontal row. */
 .next{
     margin: 2%;
     display: flex;
     justify-content: center;
     gap: 10%;
 }
-/* Preview card - Styles the story and trailer navigation cards. */
+/* Shared card styling keeps the home-page previews visually consistent. */
 .box1{
-    /* border: 2px  solid rgb(189, 188, 188); */
     margin-top: 5%;
     border-radius: 5%;
-    box-shadow: 10px 5px #cccccc;
+    box-shadow: 10px 5px var(--color-shadow);
     width:fit-content;
     text-align: center;
     .ig{
         width: 20vw;
         height: 30vh;
-        /* margin: 2%; */
-        /* border: 2px solid black; */
         background-image: url(../statics/img.webp);
         background-repeat: no-repeat;
+        /* Crop as needed to fill the fixed-size preview without stretching. */
         background-size: cover;
         border-radius: 5%;
     }
     a{
-        color: blue;
+        color: var(--color-link-accent);
     }
 }
-/* Preview card hover - Adds emphasis when a visitor points to a card. */
+/* A stronger shadow signals that the preview card is interactive. */
 .box1:hover{
-    box-shadow: 5px 10px 5px 10px #cccccc;
+    box-shadow: 5px 10px 5px 10px var(--color-shadow);
 }

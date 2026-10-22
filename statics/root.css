@@ -1,0 +1,28 @@
+/* Shared design tokens keep project-wide colors and typography consistent. */
+:root {
+    --color-primary: #333333;
+    --color-surface: #FFFFFF;
+    --color-text: #000000;
+    --color-link: #FFFFFF;
+    --color-link-accent: #0000FF;
+    --color-shadow: #CCCCCC;
+
+    --font-family-base: Arial, Helvetica, sans-serif;
+    --font-size-base: 1rem;
+
+    --spacing-unit: 1rem;
+}
+
+/* Reset browser spacing so page layouts start from a consistent baseline. */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Provide shared page defaults while allowing component styles to override them. */
+body {
+    background-color: var(--color-surface);
+    color: var(--color-text);
+    font-family: var(--font-family-base);
+    font-size: var(--font-size-base);
+}

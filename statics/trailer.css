@@ -1,4 +1,4 @@
-/* Trailer section - Centers and sizes the featured trailer visual. */
+/* Center the featured image and size it relative to the viewport. */
 .trailer{
     text-align: center;
     img{
