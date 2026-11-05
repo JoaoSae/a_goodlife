@@ -25,7 +25,21 @@
                 <a href="/filmmakers">Filmmakers</a>
                 <a href="/contact">Contact Us</a>
             </section>
-        </nav>
+            <section class="ham" onclick="ham(this)" id="ham">
+                <section class="bar1"></section>
+                <section class="bar2"></section>
+                <section class="bar3"></section>
+            </section>
+        </nav><hr>
+        <section id="ham_menu" class="ham_menu">
+                <li><a href="/">Home</a></li>
+                <li><a href="/story">Story</a></li>
+                <li><a href="/epk">EPK</a></li>
+                <li><a href="/trailer">Trailer</a></li>
+                <li><a href="/bts">BTS</a></li>
+                <li><a href="/filmmakers">Filmmakers</a></li>
+                <li><a href="/contact">Contact Us</a></li>
+        </section>
         <section class="main">
             <section class="poster">
                 <img src="{{url_for('static', filename='img.webp')}}" alt="poster">
