@@ -6,6 +6,9 @@
     <title>Log In</title>
     <link rel="stylesheet" href="{{url_for('static', filename='style.css')}}">
     <link rel="stylesheet" href="{{url_for('static', filename='login_style.css')}}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="{{ url_for('static', filename='jquery/jquery-3.7.1.js') }}"></script>
+    <script src="{{ url_for('static', filename='script/script.js') }}"></script>
 </head>
 <body>
     <nav>
@@ -37,6 +40,14 @@
             <button type="reset">Clear</button>
         </form>
     </main>
+    <section class="accessibility">
+            <ul id="list">
+                <li><a href="#" id="lightMode">Light Mode</a></li><br>
+                <li><a href="#" id="darkMode">Dark Mode</a></li><br>
+                <li><a href="#nav">Back to top</a></li>
+            </ul>
+            <button type="submit" id="btn"><i style='font-size:32px' class='fa fa-universal-access'></i></button>
+        </section>
     <footer>
             <section class="footer1">
                 <a href="/" class="logo"><img src="{{url_for('static', filename='A Good Life Logo.png')}}" alt="logo"></a>

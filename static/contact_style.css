@@ -4,6 +4,12 @@ form{
         width: 30%;
     }
 }
+body{
+    background-image: url(Ref\ Image\ 2.jpeg);
+    background-size: cover;
+    /* background-position: 100%; */
+    background-repeat: no-repeat;
+}
 .error{
     color: red;
 }
@@ -13,8 +19,9 @@ form{
 main{
     text-align: center;
 }
-/* .form{
-    border: 2px solid black;
-    width: 60%;
-    margin: 2%;
-} */
+.form{
+    /* border: 2px solid black; */
+    /* width: 60%; */
+    /* margin-top:10%; */
+    /* margin-left: 35%; */
+}
