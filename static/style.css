@@ -1,0 +1,142 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1%;
+}
+.ham {
+  display: inline-block;
+  cursor: pointer;
+}
+.bar1, .bar2, .bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: #333;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+.change .bar1 {
+  transform: translate(0, 11px) rotate(-45deg);
+}
+.change .bar2 {
+    opacity: 0;
+}
+.change .bar3 {
+  transform: translate(0, -11px) rotate(45deg);
+}
+.ham_menu{
+    background-color: #1B88B0;
+    text-align: right;
+    padding: 2%;
+    width: 40%;
+    height: 100%;
+    position: fixed;
+    right: 0;
+    li{
+        list-style: none;
+        height: 5vh;
+    }
+    a{
+        color: white;
+        text-decoration: none;
+    }
+}
+@media screen and (min-width:1000px){
+    .ham{
+        display: none;
+    }
+}
+@media screen  and (max-width: 1000px){     
+    .right, .left{
+        display: none;
+    }
+    nav{
+        display: flex;
+        justify-content: space-between;
+    }
+}
+.right, .left{
+    padding: 2%;
+    width: 30%;
+    border-radius: 5%;
+    text-align: center;
+    a{
+    text-decoration: none;
+    margin: 6%;
+    padding: 1%;
+    color:#1B88B0;
+    }
+    a:hover{
+    /* background-color: #b7afaf; */
+}
+}
+.logo img{
+    width: 15vw;
+}
+.accessibility{
+    position: sticky;
+    bottom: 2%;
+    margin-right: 1%;
+    display:flex;
+    justify-content: right;
+    gap: 1%;
+    a{
+        color: black;
+        text-decoration: none;
+    }
+    ul{
+        list-style: none;
+        /* margin: 1%; */
+        li{
+            background-color: #f2f2f2;
+            box-shadow:5px 5px  #333333;
+            border-radius: 10px;
+            line-height: 30px;
+            
+        }
+    }
+    button{
+        border: none;
+        background: none;
+    }
+}
+.dark-mode {
+    background: #222;
+    color: white;
+    i{
+        color: white;
+    }
+}
+.dark-mode a {
+    color: white;
+}
+footer{ 
+    /* position: fixed;
+    bottom: 0;
+    width: 100%; */
+    background-color: #333333;
+    color: white;
+    padding: 2%;
+    display: flex;
+    justify-content: space-between;
+    .links{
+        width:fit-content;
+    }
+    .qlinks{
+    display: flex;
+    justify-content: right;
+    gap: 10%;
+    }
+    li{
+        list-style: none;
+        padding: 2%;
+    }
+    a{
+        color: #1B88B0;
+        text-decoration: none;
+    }
+}
