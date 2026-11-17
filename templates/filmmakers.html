@@ -59,9 +59,7 @@
     <section class="team-image">
         <img src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?auto=format&fit=crop&w=2000&q=90" alt="The GOOD LIFE student team">
     </section>
-    <!-- TEAM CATEGORIES -->
-    <section class="team-categories">
-        <!-- FILM STUDENTS -->
+    <!-- TEAM CARD -->
         <div class="team-card">
             <div class="team-number">
                 01 / FILM &amp; PRODUCTION
@@ -71,15 +69,71 @@
                 The student storytellers behind the camera, performances, sound, and edit.
             </p>
             <div class="team-divider"></div>
-            <h3 class="roster-title">
-                Student roster to be announced
-            </h3>
-            <p class="roster-description">
-                Names, photographs, and individual contributions will appear here when confirmed.
-            </p>
-        </div>
-        <!-- WEB STUDENTS -->
-        <div class="team-card">
+            <div class="cards">
+                <div class="member">
+                    <div class="member-img">
+                        <img src="{{url_for('static', filename='images/images.png')}}" alt="member photo">
+                    </div>
+                    <div class="member-details">
+                        <h3 class="name">Jacqueline Guzman</h3>
+                        <h3 class="role">Director &amp; Writer</h3>
+                        <p>Bio</p>
+                    </div>
+                    <div class="social-links">
+                        <a href=""><i class="fa fa-instagram" style="font-size:30px"></i></a>
+                        <a href=""><i class="fa fa-linkedin-square" style="font-size:30px"></i></a>
+                        <a href=""><i class="fa fa-envelope" style="font-size:30px"></i></a>
+                    </div>
+                </div>
+                <div class="member">
+                    <div class="member-img">
+                        <img src="{{url_for('static', filename='images/images.png')}}" alt="member photo">
+                    </div>
+                    <div class="member-details">
+                        <h3 class="name">Zhanna Radova</h3>
+                        <h3 class="role">Producer</h3>
+                        <p>Bio</p>
+                    </div>
+                    <div class="social-links">
+                        <a href=""><i class="fa fa-instagram" style="font-size:30px"></i></a>
+                        <a href=""><i class="fa fa-linkedin-square" style="font-size:30px"></i></a>
+                        <a href=""><i class="fa fa-envelope" style="font-size:30px"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="cards">
+                <div class="member">
+                    <div class="member-img">
+                        <img src="{{url_for('static', filename='images/images.png')}}" alt="member photo">
+                    </div>
+                    <div class="member-details">
+                        <h3 class="name">Lynn Thant Naing</h3>
+                        <h3 class="role">Director of Photography &amp; Editor</h3>
+                        <p>Bio</p>
+                    </div>
+                    <div class="social-links">
+                        <a href=""><i class="fa fa-instagram" style="font-size:30px"></i></a>
+                        <a href=""><i class="fa fa-linkedin-square" style="font-size:30px"></i></a>
+                        <a href=""><i class="fa fa-envelope" style="font-size:30px"></i></a>
+                    </div>
+                </div>
+                <div class="member">
+                    <div class="member-img">
+                        <img src="{{url_for('static', filename='images/images.png')}}" alt="member photo">
+                    </div>
+                    <div class="member-details">
+                        <h3 class="name">Edward Alexander Haslam</h3>
+                        <h3 class="role">Sound Recordist</h3>
+                        <p>Bio</p>
+                    </div>
+                    <div class="social-links">
+                        <a href=""><i class="fa fa-instagram" style="font-size:30px"></i></a>
+                        <a href=""><i class="fa fa-linkedin-square" style="font-size:30px"></i></a>
+                        <a href=""><i class="fa fa-envelope" style="font-size:30px"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="team-card">
             <div class="team-number">
                 02 / DESIGN &amp; DEVELOPMENT
             </div>
@@ -89,17 +143,43 @@
                 the film's online home.
             </p>
             <div class="team-divider"></div>
-            <h3 class="roster-title">
-                Student roster to be announced
-            </h3>
-            <p class="roster-description">
-                Names, photographs, and individual contributionswill appear here when confirmed.
-            </p>
+            <div class="cards">
+                <div class="member">
+                    <div class="member-img">
+                        <img src="{{url_for('static', filename='images/ppp.jpg')}}" alt="member photo">
+                    </div>
+                    <div class="member-details">
+                        <h3 class="name">Farhan</h3>
+                        <h3 class="role">Full Stack Developer</h3>
+                        <p>Web developer passionate about creative collaboration, games, film, and exploring the world.</p>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://www.instagram.com/gmk._0/"><i class="fa fa-instagram" style="font-size:30px"></i></a>
+                        <a href="https://github.com/gmk-farhan/"><i class="fa fa-github" style="font-size:30px"></i></a>
+                        <a href="mailto:gmknaxim@gmail.com"><i class="fa fa-envelope" style="font-size:30px"></i></a>
+                    </div>
+                </div>
+                <div class="member">
+                    <div class="member-img">
+                        <img src="{{url_for('static', filename='images/images.png')}}" alt="member photo">
+                    </div>
+                    <div class="member-details">
+                        <h3 class="name">Name</h3>
+                        <h3 class="role">Role</h3>
+                        <p>Bio</p>
+                    </div>
+                    <div class="social-links">
+                        <a href=""><i class="fa fa-instagram" style="font-size:30px"></i></a>
+                        <a href=""><i class="fa fa-linkedin-square" style="font-size:30px"></i></a>
+                        <a href=""><i class="fa fa-envelope" style="font-size:30px"></i></a>
+                    </div>
+                </div>
+            </div>
         </div>
-    </section>
+        </div>
     <!-- CLOSING BANNER -->
-    <section class="team-message">
-        <div class="section-label">
+    <section class="message">
+        <div class="label">
             MADE TOGETHER
         </div>
         <h2>
