@@ -40,27 +40,85 @@
                 <li><a href="/filmmakers">Filmmakers</a></li>
                 <li><a href="/contact">Contact Us</a></li>
         </section>
-    <main>
+    <main class="container">
+        <!-- HEADER -->
+    <header>
+        <h1>Contact Us</h1>
+        <p>
+            A question about GOOD LIFE? A screening, a collaboration,
+            or simply a thought to share. We'd love to hear from you.
+        </p>
+    </header>
+    <!-- CONTACT SECTION -->
+    <section class="contact-section">
+        <div class="contact-info">
+            <div class="section-label">A NOTE TO THE TEAM</div>
+            <h2>
+                Every connection<br>
+                starts somewhere.
+            </h2>
+            <p>
+                For film enquiries, press, student projects, and collaborations,
+                leave a message for the GOOD LIFE team.
+            </p>
+        </div>
         <section class="form">
-            <h1>Contact Us</h1>
-        <h3>We'd love to hear from you - get in touch!</h3>
         <p class="error" id="msg">{{msg}}</p>
         <p class="smsg">{{smsg}}</p>
-            <form action="/contact" method="POST">
+            <form class="contact-form" action="/contact" method="POST">
             <label for="name">Name</label><br>
             <input type="text" name="name" id="name" placeholder="John"><br>
             <label for="mail">Email</label><br>
             <input type="email" name="mail" id="mail" placeholder="john@gmail.com"><br>
             <label for="message">Message</label><br>
-            <textarea name="message" id="message" placeholder="Type Message"></textarea><br><br>
+            <textarea name="message" id="message" placeholder="Type Message"></textarea><br>
             <button type="submit">Sent</button>
-            <button type="reset">Clear</button>
+            <button type="reset" class="clear">Clear</button>
         </form>
         </section>
-        <div class="space">
-            
-        </div>
     </main>
+    <!-- FAQ SECTION -->
+    <section class="faq-section">
+        <div class="heading">
+            <div class="label">A FEW ANSWERS</div>
+            <h2>
+                Frequently asked<br>
+                questions.
+            </h2>
+        </div>
+        <div class="list">
+            <div class="item">
+                <button class="question">
+                    <span>Where can I watch GOOD LIFE?</span>
+                    <span>⌄</span>
+                </button>
+                <div class="answer">
+                    GOOD LIFE screenings and viewing information will be
+                    announced through our official website and social channels.
+                </div>
+            </div>
+            <div class="item">
+                <button class="question">
+                    <span>Is the official trailer available?</span>
+                    <span>⌄</span>
+                </button>
+                <div class="answer">
+                    Check our official website for the latest trailer and
+                    updates about GOOD LIFE.
+                </div>
+            </div>
+            <div class="item">
+                <button class="question">
+                    <span>Who is part of the student team?</span>
+                    <span>⌄</span>
+                </button>
+                <div class="answer">
+                    GOOD LIFE is brought together by a student team
+                    working across film production and creative collaboration.
+                </div>
+            </div>
+        </div>
+    </section>
     <section class="accessibility">
             <ul id="list">
                 <li><a href="#" id="lightMode">Light Mode</a></li><br>
@@ -90,5 +148,18 @@
                 </section>
             </section>
     </footer>
+    <script>
+        document.querySelectorAll('.question').forEach(button => {
+        button.addEventListener('click', () => {
+        const currentItem = button.parentElement;
+        document.querySelectorAll('.item').forEach(item => {
+            if (item !== currentItem) {
+                item.classList.remove('active');
+            }
+        });
+        currentItem.classList.toggle('active');
+    });
+});
+    </script>
 </body>
 </html>

@@ -40,15 +40,78 @@
                 <li><a href="/filmmakers">Filmmakers</a></li>
                 <li><a href="/contact">Contact Us</a></li>
         </section>
-    <main>
-        <section class="trailer">
-            <img src="{{url_for('static', filename='img.webp')}}" alt="trailer">
-        </section>
-
-        <section class="credits">
-
-        </section>
-        
+    <main class="container">
+    <section class="hero">
+        <div class="tagline">
+            <span class="tag-line"></span>
+            THE FIRST LOOK
+        </div>
+        <h1>
+            a <i> good </i> life. On screen.
+        </h1>
+        <div class="description">
+            <p>
+                A glimpse into the people, places, and moments at the heart of the film.
+            </p>
+        </div>
+    </section>
+        <!-- TRAILER -->
+    <section class="trailer">
+        <!-- <img src="{{ url_for('static', filename='images/Ref Image 3.jpeg') }}" alt=""> -->
+        <video controls>
+            <source src="{{ url_for('static', filename='images/video.mp4') }}" type="video/mp4">
+            Your browser does not support HTML video.
+        </video>
+    </section>
+         <!-- FILM CREDITS -->
+    <section class="credits">
+        <div class="credits-heading">
+            <div class="tagline">
+                <span class="tag-line"></span>
+                A FILM MADE TOGETHER
+            </div>
+            <h2>
+                Film credits
+            </h2>
+        </div>
+        <div class="list">
+            <div class="item">
+                <span class="number">01</span>
+                <span class="role">Director</span>
+                <span class="name">Jacqueline Guzman</span>
+            </div>
+            <div class="item">
+                <span class="number">02</span>
+                <span class="role">Writer</span>
+                <span class="name">Jacqueline Guzman</span>
+            </div>
+            <div class="item">
+                <span class="number">03</span>
+                <span class="role">Producer</span>
+                <span class="name">Zhanna Radova</span>
+            </div>
+            <div class="item">
+                <span class="number">04</span>
+                <span class="role">Director of Photography</span>
+                <span class="name">Lynn Thant Naing</span>
+            </div>
+            <div class="item">
+                <span class="number">05</span>
+                <span class="role">Editor</span>
+                <span class="name">Lynn Thant Naing</span>
+            </div>
+            <div class="item">
+                <span class="number">06</span>
+                <span class="role">Sound Recordist</span>
+                <span class="name">Edward Alexander Haslam</span>
+            </div>
+            <div class="item">
+                <span class="number">07</span>
+                <span class="role">Lead Role</span>
+                <span class="name">Peter Damian</span>
+            </div>
+        </div>
+    </section>
     </main>
     <section class="accessibility">
             <ul id="list">

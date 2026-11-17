@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Filmmakers</title>
     <link rel="stylesheet" href="{{url_for('static', filename='style.css')}}">
+    <link rel="stylesheet" href="{{url_for('static', filename='team_style.css')}}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="{{ url_for('static', filename='jquery/jquery-3.7.1.js') }}"></script>
     <script src="{{ url_for('static', filename='script/script.js') }}"></script>
@@ -29,8 +30,8 @@
                 <section class="bar2"></section>
                 <section class="bar3"></section>
             </section>
-        </nav><hr>
-        <section id="ham_menu" class="ham_menu">
+    </nav><hr>
+    <section id="ham_menu" class="ham_menu">
                 <li><a href="/">Home</a></li>
                 <li><a href="/story">Story</a></li>
                 <li><a href="/epk">EPK</a></li>
@@ -38,7 +39,75 @@
                 <li><a href="/bts">BTS</a></li>
                 <li><a href="/filmmakers">Filmmakers</a></li>
                 <li><a href="/contact">Contact Us</a></li>
-        </section>
+    </section>
+<main class="container">
+    <!-- HERO SECTION -->
+    <section class="hero">
+        <div class="label">
+            THE STUDENTS BEHIND GOOD LIFE
+        </div>
+        <h1>Meet the Team</h1>
+        <div class="description">
+            <p>
+                Two disciplines. One shared story. Celebrating
+                the film students and web students bringing GOOD
+                LIFE to the screen and beyond.
+            </p>
+        </div>
+    </section>
+    <!-- TEAM PHOTOGRAPH -->
+    <section class="team-image">
+        <img src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?auto=format&fit=crop&w=2000&q=90" alt="The GOOD LIFE student team">
+    </section>
+    <!-- TEAM CATEGORIES -->
+    <section class="team-categories">
+        <!-- FILM STUDENTS -->
+        <div class="team-card">
+            <div class="team-number">
+                01 / FILM &amp; PRODUCTION
+            </div>
+            <h2>Film students</h2>
+            <p class="team-description">
+                The student storytellers behind the camera, performances, sound, and edit.
+            </p>
+            <div class="team-divider"></div>
+            <h3 class="roster-title">
+                Student roster to be announced
+            </h3>
+            <p class="roster-description">
+                Names, photographs, and individual contributions will appear here when confirmed.
+            </p>
+        </div>
+        <!-- WEB STUDENTS -->
+        <div class="team-card">
+            <div class="team-number">
+                02 / DESIGN &amp; DEVELOPMENT
+            </div>
+            <h2>Web students</h2>
+            <p class="team-description">
+                The student designers and developers behind
+                the film's online home.
+            </p>
+            <div class="team-divider"></div>
+            <h3 class="roster-title">
+                Student roster to be announced
+            </h3>
+            <p class="roster-description">
+                Names, photographs, and individual contributionswill appear here when confirmed.
+            </p>
+        </div>
+    </section>
+    <!-- CLOSING BANNER -->
+    <section class="team-message">
+        <div class="section-label">
+            MADE TOGETHER
+        </div>
+        <h2>
+            Different talents.<br>
+            <span>The same GOOD LIFE.</span>
+        </h2>
+    </section>
+</main>
     <section class="accessibility">
             <ul id="list">
                 <li><a href="#" id="lightMode">Light Mode</a></li><br>

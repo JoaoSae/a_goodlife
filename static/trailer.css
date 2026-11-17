@@ -1,8 +1,123 @@
+.container {
+    width: 100%;
+}
+
+.hero {
+    padding: 2%;
+}
+
+.tagline {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #113344;
+}
+
+.tag-line {
+    width: 19px;
+    height: 2px;
+    background: #1B88B0;
+}
+
+.hero h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(48px, 6.2vw, 95px);
+    font-weight: 400;
+    letter-spacing: -3px;
+    line-height: 1.2;
+    margin-top: 32px;
+}
+
+.description {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 25px;
+}
+
+.description p {
+    max-width: 600px;
+    color: #444;
+    font-size: 18px;
+    line-height: 1.8;
+}
+/* TRAILER */
 .trailer{
     text-align: center;
-    img{
-        margin: 2%;
-        width: 90%;
-        height: 70vh;
-    }
+}
+.trailer video {
+    width: 95%;
+    margin: 20px auto;
+    border-radius: 10px;
+}
+
+/* CREDITS */
+
+.credits {
+    padding: 2%;
+    display: grid;
+    grid-template-columns: 0.75fr 1.25fr;
+    gap: 7%;
+}
+
+/* Credits heading */
+
+.credits-heading {
+    position: sticky;
+    top: 40px;
+    height: fit-content;
+}
+
+.credits-heading .eyebrow {
+    margin-bottom: 28px;
+}
+
+.credits-heading h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(42px, 4vw, 62px);
+    font-weight: 400;
+    letter-spacing: -2px;
+    line-height: 1.15;
+}
+
+/* Credits list */
+
+.list {
+    width: 100%;
+}
+
+.item {
+    min-height: 88px;
+    display: grid;
+    grid-template-columns: 45px 1fr auto;
+    align-items: center;
+    gap: 15px;
+}
+
+
+.item:hover {
+    background: rgba(27,136,176,0.05);
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.number {
+    color: #1B88B0;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.role {
+    font-family: 'Playfair Display', serif;
+    font-size: 25px;
+    font-weight: 400;
+    color: #113344;
+}
+
+.name {
+    color: #555;
+    font-size: 13px;
 }

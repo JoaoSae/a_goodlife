@@ -11,23 +11,26 @@
     <script src="{{ url_for('static', filename='script/script.js') }}"></script>
 </head>
     <body>
-        <nav id="nav" class="site-header">
-            <a href="/" class="brand">A Good Life</a>
-            <section class="main-nav">
-                <a href="/" class="active">Home</a>
+        <nav>
+            <section class="left">
                 <a href="/story">Story</a>
                 <a href="/epk">EPK</a>
+                <a href="/trailer">Trailer</a>
+            </section>
+            <section class="center">
+                <a href="/" class="logo"><img src="{{url_for('static', filename='A Good Life Logo.png')}}" alt="logo"></a>
+            </section>
+            <section class="right">
                 <a href="/bts">BTS</a>
                 <a href="/filmmakers">Filmmakers</a>
                 <a href="/contact">Contact Us</a>
             </section>
-            <a href="/trailer" class="trailer-action"><span>Trailer</span><span>&rarr;</span></a>
             <section class="ham" onclick="ham(this)" id="ham">
                 <section class="bar1"></section>
                 <section class="bar2"></section>
                 <section class="bar3"></section>
             </section>
-        </nav>
+        </nav><hr>
         <section id="ham_menu" class="ham_menu">
                 <li><a href="/">Home</a></li>
                 <li><a href="/story">Story</a></li>
@@ -145,28 +148,26 @@
             </ul>
             <button type="submit" id="btn"><i style='font-size:32px' class='fa fa-universal-access'></i></button>
         </section>
-
-        <footer class="site-footer">
-            <section class="signature">
-                <a href="/" class="brand">A Good Life</a>
-                <p class="tagline">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        <footer>
+            <section class="footer1">
+                <a href="/" class="logo"><img src="{{url_for('static', filename='A Good Life Logo.png')}}" alt="logo"></a>
             </section>
-            <section class="footer-links">
-                <a href="/">Home</a>
-                <a href="/story">Story</a>
-                <a href="/epk">EPK</a>
-                <a href="/trailer">Trailer</a>
-                <a href="/bts">BTS</a>
-                <a href="/filmmakers">Filmmakers</a>
-                <a href="/contact">Contact Us</a>
-            </section>
-            <section class="legal">
-                <hr>
-                <section class="notice">
-                    <span>&copy; 2026 A Good Life. All rights reserved.</span>
-                    <span>All film materials are placeholders.</span>
+            <section class="links">
+                <h3>Quick Links</h3>
+                <section class="qlinks">
+                    <ul>
+                    <li><a href="/index">Home</a></li>
+                    <li><a href="/story">Story</a></li>
+                    <li><a href="/epk">EPK</a></li>
+                    <li><a href="/trailer">Trailer</a></li>
+                </ul>
+                <ul>
+                    <li><a href="/bts">BTS</a></li>
+                    <li><a href="/filmmakers">Filmmakers</a></li>
+                    <li><a href="/contact">Contact Us</a></li>
+                </ul>
                 </section>
             </section>
-        </footer>
+    </footer>
     </body>
 </html>
