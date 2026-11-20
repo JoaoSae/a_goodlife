@@ -11,3 +11,15 @@
 ## Font type
 
 Arial, Helvetica, sans-serif.
+
+//// ginger template////
+your_project/
+├── app.py
+├── static/
+│   ├── base_style.css
+│   ├── index_style.css
+│   └── home-city.jpg
+└── templates/
+    ├── base.html
+    ├── index.html
+    └── story.html
