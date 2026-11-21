@@ -14,13 +14,13 @@
     font-weight: 600;
     letter-spacing: 2px;
     text-transform: uppercase;
-    color: #113344;
+    color: #1B88B0;
 }
 
 .tag-line {
     width: 19px;
     height: 2px;
-    background: #1B88B0;
+    background-color: #1B88B0;
 }
 
 .hero h1 {
@@ -91,10 +91,10 @@
 
 .item {
     min-height: 88px;
-    display: grid;
-    grid-template-columns: 45px 1fr auto;
+    display: flex;
+    justify-content: space-between;
     align-items: center;
-    gap: 15px;
+    /* gap: 15px; */
 }
 
 
@@ -104,20 +104,14 @@
     padding-right: 10px;
 }
 
-.number {
-    color: #1B88B0;
-    font-size: 12px;
-    font-weight: 600;
-}
-
 .role {
     font-family: 'Playfair Display', serif;
-    font-size: 25px;
+    font-size: 18px;
     font-weight: 400;
     color: #113344;
 }
 
 .name {
     color: #555;
-    font-size: 13px;
+    font-size: 22px;
 }
