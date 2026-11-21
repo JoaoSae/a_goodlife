@@ -1,4 +1,4 @@
-form{
+/* form{
     margin: 10px auto;
     input, textarea{
         width: 30%;
@@ -7,7 +7,7 @@ form{
 body{
     background-image: url(Ref\ Image\ 2.jpeg);
     background-size: cover;
-    /* background-position: 100%; */
+    background-position: 100%;
     background-repeat: no-repeat;
 }
 .error{
@@ -20,8 +20,9 @@ main{
     text-align: center;
 }
 .form{
-    /* border: 2px solid black; */
-    /* width: 60%; */
-    /* margin-top:10%; */
-    /* margin-left: 35%; */
-}
+    
+    border: 2px solid black; 
+    width: 60%;
+    margin-top:10%;
+    margin-left: 35%;
+} */

@@ -13,10 +13,10 @@
         <nav class="desktop-nav" aria-label="Main navigation">
             <a href="/" {% if request.endpoint == 'index' %}class="active" aria-current="page"{% endif %}>Home</a>
             <a href="/story" {% if request.endpoint == 'story' %}class="active" aria-current="page"{% endif %}>The story</a>
-            <a href="/trailer">Trailer</a>
+            <a href="/trailer"  {% if request.endpoint == 'trailer' %}class="active" aria-current="page"{% endif %}>Trailer</a>
             <a href="/#characters">Cast &amp; characters</a>
-            <a href="/bts">BTS</a>
-            <a href="/filmmakers">Filmmakers</a>
+            <a href="/bts"  {% if request.endpoint == 'bts' %}class="active" aria-current="page"{% endif %}>BTS</a>
+            <a href="/filmmakers"  {% if request.endpoint == 'filmmakers' %}class="active" aria-current="page"{% endif %}>Filmmakers</a>
         </nav>
         <a class="trailer-button" href="/trailer">Watch trailer <span aria-hidden="true">&nearr;</span></a>
         <details class="mobile-menu">
