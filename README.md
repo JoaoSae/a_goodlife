@@ -17,3 +17,4 @@ Arial, Helvetica, sans-serif.
 - add questions and answers to faq section on contact page
 - add bio and social links to meet the team page and change name from filmmakers to our team
 - change trailer video with placeholder in trailer page
+- add image gallery/slideshow to bts page
