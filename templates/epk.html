@@ -41,15 +41,70 @@
                 <li><a href="/contact">Contact Us</a></li>
         </section>
         <main>
-            <h1>Press Kit</h1>
+            <!-- HERO SECTION -->
+            <section class="hero">
+                <div class="tagline">
+                    <span class="tag-line"></span>
+                    PRESS KIT
+                </div>
+                <h1>
+                    What makes a <i> good </i> life.
+                </h1>
+                <div class="description">
+                    <p>A story of ordinary people, extraordinary choices, and the things we find when we stop looking elsewhere.</p>
+                </div>
+            </section>
             <section class="epk">
-                <!-- <a href="/download"></a> -->
-                <button type="button" class="download">Download Now <i class="fa fa-download" style="font-size:24px"></i></button>
+                <button onclick="openModal()" class="download-btn">Download Now <i class="fa fa-download" style="font-size:24px"></i></button>
+                <div class="modal" id="downloadModal">
+                    <div class="modal-content">
+                        <span class="close" onclick="closeModal()">&times;</span>
+                        <h2 id="formTitle">Enter Your Email</h2>
+                        <p id="formDescription">
+                            Enter your email to download the file.
+                        </p>
+                        <form action="/download" method="POST" id="userForm">
+                            <input type="email" name="email" placeholder="Email Address" required>
+                            <button type="submit" class="submit-btn">
+                                Continue & Download
+                            </button>
+                        </form>
+                        <div class="toggle">
+                            <span id="toggleText">New here?</span>
+                            <a href="/register" id="toggleLink">
+                                Register
+                            </a>
+                            </div>
+                        </div>
+                    </div>
             </section>
-            <section class="story">
-                <h1>Short Description</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur, suscipit maxime quam recusandae iusto aliquid nisi vel itaque est? Id, fuga eaque. Adipisci maiores mollitia maxime magnam amet enim pariatur consectetur a, ullam sed modi aliquam animi debitis laudantium, magni, porro nemo. Voluptatibus mollitia nostrum, modi excepturi perspiciatis possimus reiciendis quas illo aperiam fugit vel vero quam fuga saepe vitae, eos, laboriosam officia. Veritatis deleniti, rem non quia cupiditate eum ea ipsa suscipit incidunt dicta facere ut eaque quasi odit molestias doloremque explicabo numquam fuga dolores quam. Possimus, voluptas amet enim ducimus, quisquam molestiae distinctio reprehenderit quod magni tempora ad.</p>
+            <!-- SYNOPSIS -->
+            <section class="synopsis">
+            <section class="titles">
+                <div class="tagline">
+                    <span class="tag-line"></span>
+                    THE SYNOPSIS
+            </div>
+            <h1>
+                Some journeys bring us home.
+            </h1>
             </section>
+            <section class="paragraph">
+                <p>
+                    Nil, a middle-aged man, has a good job, good family and even good neighbours, but that doesn't necessarily make him feel good. Surrounded by all that goodness, Nil feels trapped and has to decide whether to continue living like this or change.
+                </p>
+            </section>
+            </section>
+            <!-- CLOSING BANNER -->
+            <section class="message">
+        <div class="label">
+            MADE TOGETHER
+        </div>
+        <h2>
+            Different talents.<br>
+            <span>The same GOOD LIFE.</span>
+        </h2>
+    </section> 
         </main>
          <section class="accessibility">
             <ul id="list">
@@ -81,10 +136,14 @@
             </section>
         </footer>
         <script>
-            const download=document.querySelector(".download");
-            download.addEventListener("click", ()=>{
-                print();
-            })
-        </script>
+function openModal() {
+    document.getElementById("downloadModal").style.display = "flex";
+}
+function closeModal() {
+    document.getElementById("downloadModal").style.display = "none";
+}
+
+</script>
+
     </body>
 </html>

@@ -1,11 +1,13 @@
-from flask import Flask , render_template, request, redirect, url_for, session
-import requests
+from flask import Flask , render_template, request, send_from_directory, url_for, session
+import os
 import re
 from flask_sqlalchemy import SQLAlchemy
 app=Flask(__name__)
 app.config['SQLALCHEMY_DATABASE_URI']='mysql+pymysql://root@localhost:3306/good_life?charset=utf8'
 db=SQLAlchemy(app)
 app.secret_key = "mykey"
+
+FOLDER = os.path.join(app.root_path, "static")
 
 #contact us page table contains name, email, and message
 class Contact(db.Model):
@@ -35,10 +37,15 @@ def index():
 @app.route("/story")
 def story():
     return render_template("story.html")
-# @app.route("/download")
-# def download():
-#     if 
-#     return render_template("epk.html")
+@app.route("/download", methods=["POST"])
+def download():
+    email = request.form.get("email").strip()
+    # Validate email
+    if not re.match(mail, email):
+        return "Please enter a valid email address.", 400
+
+    # Download file
+    return send_from_directory(FOLDER, "sample.pdf", as_attachment=True, download_name="sample.pdf")
 @app.route("/epk")
 def epk():
     return render_template("epk.html")
@@ -115,6 +122,7 @@ def register():
             db.session.add(entry)
             db.session.commit()
             msg='Registration Successful'
+            send_from_directory(FOLDER, "sample.pdf", as_attachment=True, download_name="sample.pdf")
             return render_template("register.html", smsg=msg)
     else:
         print("error")
