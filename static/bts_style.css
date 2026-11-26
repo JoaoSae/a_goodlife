@@ -31,7 +31,8 @@ main{
 }
 
 .hero h1 {
-    font-family: 'Barlow Condensed', sans-serif;
+    font-family: var(--serif);
+    /* font-family: 'Barlow Condensed', sans-serif; */
     font-size: clamp(65px, 8vw, 115px);
     font-weight: 500;
     line-height: 1;
@@ -41,6 +42,7 @@ main{
 
 .description {
     /* max-width: 850px; */
+    font-family: var(--serif);
     margin-top: 30px;
     margin-bottom: 55px;
     display: flex;
@@ -136,6 +138,7 @@ h2 {
 }
 
 .feature p {
+    font-family: var(--serif);
   /* max-width: ; */
   margin: 0;
   color: #555;
