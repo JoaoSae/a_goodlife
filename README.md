@@ -29,3 +29,71 @@ your_project/
 - add bio and social links to meet the team page and change name from filmmakers to our team
 - change trailer video with placeholder in trailer page
 - add image gallery/slideshow to bts page
+
+note for readmefile 
+
+/* Desktop Navigation */
+.desktop-nav {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+}
+
+.desktop-nav a {
+  position: relative;
+  color: #000;
+  font-size: 13px;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.desktop-nav a:hover,
+.desktop-nav a.active { color: #0000ff; }
+
+.desktop-nav a.active::after {
+  position: absolute;
+  bottom: -12px;
+  left: 0;
+  width: 20px;
+  height: 2px;
+  background: #0000ff;
+  content: "";
+}
+
+/* Trailer/CTA Button */
+.trailer-button {
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+  padding: 14px 20px;
+  color: #fff;
+  background: #113344;
+  font-size: 12px;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+/* Mobile Navigation */
+.mobile-menu {
+  display: none;
+  position: relative;
+}
+
+.mobile-menu summary { cursor: pointer; }
+
+.mobile-menu nav {
+  position: absolute;
+  z-index: 3;
+  right: 0;
+  top: 35px;
+  min-width: 200px;
+  padding: 12px;
+  background: #113344;
+}
+
+.mobile-menu nav a {
+  display: block;
+  padding: 9px;
+  color: #fff;
+  text-decoration: none;
+}
