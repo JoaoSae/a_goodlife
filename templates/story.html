@@ -3,125 +3,88 @@
 {% block title %}Story | A Good Life{% endblock %}
 
 {% block styles %}
-<link rel="stylesheet" href="{{ url_for('static', filename='story_style.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='css/story.css') }}">
 {% endblock %}
 
 {% block content %}
 <section class="container">
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Story</title>
-    <link rel="stylesheet" href="{{url_for('static', filename='style.css')}}">
-    <link rel="stylesheet" href="{{url_for('static', filename='story_style.css')}}">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="{{ url_for('static', filename='jquery/jquery-3.7.1.js') }}"></script>
-    <script src="{{ url_for('static', filename='script/script.js') }}"></script>
-</head>
-<body>
-    <!-- <nav id="nav">
-            <section class="left">
-                <a href="/story">Story</a>
-                <a href="/epk">EPK</a>
-                <a href="/trailer">Trailer</a>
-            </section>
-            <section class="center">
-                <a href="/" class="logo"><img src="{{url_for('static', filename='A Good Life Logo.png')}}" alt="logo"></a>
-            </section>
-            <section class="right">
-                <a href="/bts">BTS</a>
-                <a href="/filmmakers">Our Team</a>
-                <a href="/contact">Contact Us</a>
-            </section><section class="ham" onclick="ham(this)" id="ham">
-                <section class="bar1"></section>
-                <section class="bar2"></section>
-                <section class="bar3"></section>
-            </section>
-        </nav> -->
+    <!-- HERO SECTION -->
+    <section class="hero">
+        <div class="tagline">
+            <span class="tag-line"></span>
+            THE STORY
+        </div>
+        <h1>
+            What makes a <i>good</i> life.
+        </h1>
+        <div class="description">
+            <p>A story of ordinary people, extraordinary choices, and the things we find when we stop looking elsewhere.</p>
+        </div>
+    </section>
 
-        <section id="ham_menu" class="ham_menu">
-                <li><a href="/">Home</a></li>
-                <li><a href="/story">Story</a></li>
-                <li><a href="/epk">EPK</a></li>
-                <li><a href="/trailer">Trailer</a></li>
-                <li><a href="/bts">BTS</a></li>
-                <li><a href="/filmmakers">Filmmakers</a></li>
-                <li><a href="/contact">Contact Us</a></li>
-        </section>
-        <main>
-        <section class="container">
-            <!-- HERO SECTION -->
-            <section class="hero">
-                <div class="tagline">
-                    <span class="tag-line"></span>
-                    THE STORY
-                </div>
-                <h1>
-                    What makes a <i> good </i> life.
-                </h1>
-                <div class="description">
-                    <p>A story of ordinary people, extraordinary choices, and the things we find when we stop looking elsewhere.</p>
-                </div>
-            </section>
-        <!-- PHOTOGRAPH -->
-        <section class="image">
-            <img src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?auto=format&fit=crop&w=2000&q=90" alt="The GOOD LIFE student team">
-        </section>
-        <!-- SYNOPSIS -->
-         <section class="synopsis">
-            <section class="titles">
-                <div class="tagline">
-                    <span class="tag-line"></span>
-                    THE SYNOPSIS
+    <!-- PHOTOGRAPH -->
+    <section class="image">
+        <img src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?auto=format&fit=crop&w=2000&q=90" alt="The GOOD LIFE student team">
+    </section>
+
+    <!-- SYNOPSIS -->
+    <section class="synopsis">
+        <section class="titles">
+            <div class="tagline">
+                <span class="tag-line"></span>
+                THE SYNOPSIS
             </div>
             <h1>
                 Some journeys bring us home.
             </h1>
-            </section>
-            <section class="paragraph">
-                <p>
-                    Nil, a middle-aged man, has a good job, good family and even good neighbours, but that doesn't necessarily make him feel good. Surrounded by all that goodness, Nil feels trapped and has to decide whether to continue living like this or change.
-                </p>
-            </section>
-         </section>
-        <section class="card">
-            <section class="logline">
-                <div class="tagline">
-                    <span class="tag-line"></span>
-                    THE LOGLINE
+        </section>
+        <section class="paragraph">
+            <p>
+                Nil, a middle-aged man, has a good job, good family and even good neighbours, but that doesn't necessarily make him feel good. Surrounded by all that goodness, Nil feels trapped and has to decide whether to continue living like this or change.
+            </p>
+        </section>
+    </section>
+
+    <!-- LOGLINE & TREATMENT -->
+    <section class="card">
+        <section class="logline">
+            <div class="tagline">
+                <span class="tag-line"></span>
+                THE LOGLINE
             </div>
             <h2>
                 Suffocation has become part of a 35-year-old man who feels trapped in what seems to be “a good life”.
             </h2>
-            </section>
+        </section>
+
         <section class="treatment">
             <div class="tagline">
-                    <span class="tag-line"></span>
-                    THE TREATMENT
+                <span class="tag-line"></span>
+                THE TREATMENT
             </div>
             <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, velit!</h2>
         </section>
+
+        <!-- FEATURE GRID -->
         <div class="feature-grid">
-        <div class="feature">
-            <span class="number">01</span>
-          <h3>Camera &amp; light</h3>
-          <p>Nil wakes up. Takes a shower. Picks his clothes for work. Gets dressed. Takes his suitcase. He walks to the dinning room. His wife is doing breakfast. She doesn’t show her face. Nil takes a sit. His wife puts a cup of coffee on the table. Nil doesn’t drink. He stands up and listens to the pet barking. Nil looks at it. His toddler is sitting there too. Nil walks to the door and goes outside. His neighbours say “Have a good day!” altogether. Nil enters his car and drives. He stops driving and walks outside the car. He enters the building where he works. All his colleagues wish him good morning. Nil enters his office.</p>
+            <div class="feature">
+                <span class="number">01</span>
+                <h3>Camera &amp; light</h3>
+                <p>Nil wakes up. Takes a shower. Picks his clothes for work. Gets dressed. Takes his suitcase. He walks to the dinning room. His wife is doing breakfast. She doesn't show her face. Nil takes a sit. His wife puts a cup of coffee on the table. Nil doesn't drink. He stands up and listens to the pet barking. Nil looks at it. His toddler is sitting there too. Nil walks to the door and goes outside. His neighbours say "Have a good day!" altogether. Nil enters his car and drives. He stops driving and walks outside the car. He enters the building where he works. All his colleagues wish him good morning. Nil enters his office.</p>
+            </div>
+            <div class="feature">
+                <span class="number">02</span>
+                <h3>People &amp; performance</h3>
+                <p>The next day, Nil gets to his job. His colleagues wish him good morning. His boss calls him. Nil walks to the main office. His boss announces Nil has been promoted. His boss and colleagues celebrate around him, congratulating him and giving pats on his back. Nil gets home, his wife is waiting with dinner. She calls his friends to celebrate his promotion. The next day, Nil wakes up and gets up. He remains in silence. Stares at the wall. He stands up and grabs the towel, wraps it around his waist. Nil walks to the entrance door. Ignores his wife, his toddler and the pet. Walks outside and ignores his neighbours. He starts to walk faster, almost jogging. He runs. Runs for some time. He stops and lays down. Breathes heavily. Closes his eyes. He slowly smiles.</p>
+            </div>
+            <div class="feature">
+                <span class="number">03</span>
+                <h3>Places &amp; details</h3>
+                <p>Nil wakes up. Takes a shower. Picks his clothes for work. Gets dressed. Grabs his suitcase. Walks to the dinning room. Kisses his wife. Hugs his toddler. Pats the pet. Walks out the house. Wishes a good day to his neighbours. Enters his car and drives. Plays a song and sings it. Stops driving. Walks out his car and enters the building. Wishes good morning to his colleagues. Enters his office, takes a seat, looks in front. Nil slowly cries.</p>
+            </div>
         </div>
-        <div class="feature">
-          <span class="number">02</span>
-          <h3>People &amp; performance</h3>
-          <p>The next day, Nil gets to his job. His colleagues wish him good morning. His boss calls him. Nil walks to the main office. His boss announces Nil has been promoted. His boss and colleagues celebrate around him, congratulating him and giving pats on his back. Nil gets home, his wife is waiting with dinner. She calls his friends to celebrate his promotion. The next day, Nil wakes up and gets up. He remains in silence. Stares at the wall. He stands up and grabs the towel, wraps it around his waist. Nil walks to the entrance door. Ignores his wife, his toddler and the pet. Walks outside and ignores his neighbours. He starts to walk faster, almost jogging. He runs. Runs for some time. He stops and lays down. Breathes heavily. Closes his eyes. He slowly smiles. </p>
-        </div>
-        <div class="feature">
-          <span class="number">03</span>
-          <h3>Places &amp; details</h3>
-          <p>Nil wakes up. Takes a shower. Picks his clothes for work. Gets dressed. Grabs his suitcase. Walks to the dinning room. Kisses his wife. Hugs his toddler. Pats the pet. Walks out the house. Wishes a good day to his neighbours. Enters his car and drives. Plays a song and sings it. Stops driving. Walks out his car and enters the building. Wishes good morning to his colleagues. Enters his office, takes a seat, looks in front. Nil slowly cries. </p>
-        </div>
-      </div>
     </section>
-        </section>
+
     <!-- CLOSING BANNER -->
     <section class="message">
         <div class="label">
@@ -130,27 +93,29 @@
         <h2>
             Different talents.<br>
             <span>The same GOOD LIFE.</span>
-        </h2> 
+        </h2>
     </section>
-        <section class="gallery">
-            <section class="gallery-intro">
-                <section class="label"><span class="marker"></span><span class="kicker">Gallery</span></section>
-                <h2>Lorem ipsum dolor sit amet</h2>
-            </section>
-            <section class="stills">
-                <figure class="still">
-                    <img src="{{url_for('static', filename='img.webp')}}" alt="Film still 1">
-                    <figcaption><span class="caption">Lorem ipsum dolor</span><span class="frame">01</span></figcaption>
-                </figure>
-                <figure class="still tall">
-                    <img src="{{url_for('static', filename='img.webp')}}" alt="Film still 2">
-                    <figcaption><span class="caption">Consectetur elit</span><span class="frame">02</span></figcaption>
-                </figure>
-                <figure class="still">
-                    <img src="{{url_for('static', filename='img.webp')}}" alt="Film still 3">
-                    <figcaption><span class="caption">Sed do eiusmod</span><span class="frame">03</span></figcaption>
-                </figure>
-            </section>
+
+    <!-- GALLERY SECTION -->
+    <section class="gallery">
+        <section class="gallery-intro">
+            <section class="label"><span class="marker"></span><span class="kicker">Gallery</span></section>
+            <h2>Lorem ipsum dolor sit amet</h2>
         </section>
+        <section class="stills">
+            <figure class="still">
+                <img src="{{ url_for('static', filename='images/img.webp') }}" alt="Film still 1">
+                <figcaption><span class="caption">Lorem ipsum dolor</span><span class="frame">01</span></figcaption>
+            </figure>
+            <figure class="still tall">
+                <img src="{{ url_for('static', filename='images/img.webp') }}" alt="Film still 2">
+                <figcaption><span class="caption">Consectetur elit</span><span class="frame">02</span></figcaption>
+            </figure>
+            <figure class="still">
+                <img src="{{ url_for('static', filename='images/img.webp') }}" alt="Film still 3">
+                <figcaption><span class="caption">Sed do eiusmod</span><span class="frame">03</span></figcaption>
+            </figure>
+        </section>
+    </section>
+</section>
 {% endblock %}
-          </html>

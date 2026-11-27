@@ -97,3 +97,25 @@ note for readmefile
   color: #fff;
   text-decoration: none;
 }
+
+farhan nav bar
+
+    <!-- <nav id="nav">
+            <section class="left">
+                <a href="/story">Story</a>
+                <a href="/epk">EPK</a>
+                <a href="/trailer">Trailer</a>
+            </section>
+            <section class="center">
+                <a href="/" class="logo"><img src="{{url_for('static', filename='A Good Life Logo.png')}}" alt="logo"></a>
+            </section>
+            <section class="right">
+                <a href="/bts">BTS</a>
+                <a href="/filmmakers">Our Team</a>
+                <a href="/contact">Contact Us</a>
+            </section><section class="ham" onclick="ham(this)" id="ham">
+                <section class="bar1"></section>
+                <section class="bar2"></section>
+                <section class="bar3"></section>
+            </section>
+        </nav> -->

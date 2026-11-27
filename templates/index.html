@@ -1,6 +1,6 @@
 {% extends "base.html" %}
 {% block styles %}
-<link rel="stylesheet" href="{{ url_for('static', filename='index_style.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}">
 {% endblock %}
 {% block content %}
  <section class="hero" aria-labelledby="film-title">
@@ -31,15 +31,15 @@
             <h2>Life, one frame at a time.</h2>
             <div class="stills">
                 <figure>
-                    <img src="{{ url_for('static', filename='home-city.jpg') }}" alt="A person looking out over a city at sunset">
+                    <img src="{{ url_for('static', filename='images/home-city.jpg') }}" alt="A person looking out over a city at sunset">
                     <figcaption><span>A city full of possibility</span><span>01</span></figcaption>
                 </figure>
                 <figure class="tall">
-                    <img src="{{ url_for('static', filename='home-dreamer.jpg') }}" alt="Two people sharing a moment at a table">
+                    <img src="{{ url_for('static', filename='images/home-dreamer.jpg') }}" alt="Two people sharing a moment at a table">
                     <figcaption><span>The moments in between</span><span>02</span></figcaption>
                 </figure>
                 <figure>
-                    <img src="{{ url_for('static', filename='home-optimist.jpg') }}" alt="A woman standing in a room">
+                    <img src="{{ url_for('static', filename='images/home-optimist.jpg') }}" alt="A woman standing in a room">
                     <figcaption><span>A different kind of hope</span><span>03</span></figcaption>
                 </figure>
             </div>
@@ -60,13 +60,13 @@
                 <a class="text-link blue" href="/story">Explore the story <span aria-hidden="true">&nearr;</span></a>
             </div>
             <div class="portraits">
-                <article>
-                    <img src="{{ url_for('static', filename='home-dreamer.jpg') }}" alt="Two people sitting together at a table">
+            <article>
+                    <img src="{{ url_for('static', filename='images/home-dreamer.jpg') }}" alt="Two people sitting together at a table">
                     <h3>The dreamer</h3>
                     <p>Caught between the life he knows and the future he imagines.</p>
                 </article>
                 <article>
-                    <img src="{{ url_for('static', filename='home-optimist.jpg') }}" alt="A woman in a red shirt">
+                    <img src="{{ url_for('static', filename='images/home-optimist.jpg') }}" alt="A woman in a red shirt">
                     <h3>The quiet optimist</h3>
                     <p>A different perspective. A reminder to notice what's already here.</p>
                 </article>
@@ -75,7 +75,7 @@
 
         <section class="discoveries page-section">
             <article class="teaser">
-                <img src="{{ url_for('static', filename='home-behind-scenes.jpg') }}" alt="The film crew at work">
+                <img src="{{ url_for('static', filename='images/home-behind-scenes.jpg') }}" alt="The film crew at work">
                 <div>
                     <p class="eyebrow">Beyond the frame</p>
                     <h2>The making of a moment.</h2>
@@ -84,7 +84,7 @@
                 </div>
             </article>
             <article class="teaser reverse">
-                <img src="{{ url_for('static', filename='home-city.jpg') }}" alt="A person overlooking the city at sunset">
+                <img src="{{ url_for('static', filename='images/home-city.jpg') }}" alt="A person overlooking the city at sunset">
                 <div>
                     <p class="eyebrow">The creative team</p>
                     <h2>A story told together.</h2>
@@ -94,5 +94,5 @@
             </article>
         </section>
        
-    </main>
-    {% endblock %}
+
+        {% endblock %}
